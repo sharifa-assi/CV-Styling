@@ -6,6 +6,20 @@ header {
     height: 190px;
  
 }
+
+figure { 
+    position: relative;
+  left: 210px;
+  bottom: 30px;
+    
+}
+hgroup {
+    position: relative;
+    left: 60px;
+    top: 60px;
+}
+
+
 h3::after {
     display: block;
     content: " ";
@@ -88,11 +102,6 @@ width: 70;
 background-color: red;
 }
 
-hgroup {
-    float: left;
-    margin-left: 20px;
-    margin-top: 40px;
-}
 
 
 
@@ -104,8 +113,9 @@ hgroup {
     
 color:white;
 background-color:black;
-margin-top: -560px;
-box-sizing: border-box;
+position: relative;
+bottom: 540px;
+right: 320px;
 
 }
 
@@ -157,17 +167,17 @@ color: rgb(241, 54, 54);
 
 
 #competencies {
-    
+    position: relative;
     text-align:left;
-    margin-left: 550px;
+    
     width: 350px;
-    margin-top: -378px;
+    right: 268px;
     float:right;
-    margin-right: 150px;
+
 }
 #about { 
 float: left;
-width: 350px;
+width: 400px;
 text-align: left;
 
 }
@@ -182,7 +192,9 @@ text-align: left;
 #education {
  text-align: left;
  width: 400px;
- margin-left: 550px;
+ bottom: 681px;
+ left: 400px;
+position: relative;
 
 }
 
@@ -200,10 +212,20 @@ font-size: 120px;
 
 #hobbies {
     float: left;
+    position: relative;
+    bottom: 700px;
 }
 
 section#contact > h3   {
     visibility: hidden;
 }
+.skills {
+position: relative;
+left: 40px;
 
+}
 
+.experience {
+    position: relative;
+    
+}
