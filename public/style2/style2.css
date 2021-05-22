@@ -1,0 +1,261 @@
+h2 {
+    visibility: hidden;
+}
+h1::after {
+content: " ";
+display: block;
+border: 1px solid lightgray;
+position: relative;
+top: 20px;
+}
+
+
+
+#about {
+    position: relative;
+    bottom: 270px;
+    color: gray;
+    float: left;
+    text-align: left;
+    width: 700px;
+}
+
+figure {
+    position: relative;
+    left: 680px;
+    bottom: 105px;
+}
+img {
+    height: 200px;
+    transform: skew(15deg,-10deg);
+    
+ 
+}
+
+
+[data-skill="5"]::after{
+    
+
+    content: '★★★';
+  }
+  [data-skill="5"]{
+
+    
+    display:block;
+flex-direction: row;
+    border-style: solid;
+    border-color: rgb(16, 97, 129);
+    background-color: rgb(16, 97, 129);
+    width: 100px;
+    
+  }
+  [data-skill="3"]{
+
+    
+    display: flex;
+flex-direction: row;
+    border-style: solid;
+    border-color: rgb(16, 97, 129);
+    background-color: rgb(16, 97, 129);
+    width: 100px;
+    
+  }
+
+  [data-skill="3"]::after{
+     content: '★★';
+    
+    
+  }
+  [data-skill="1"]::after{
+
+    content: '★';
+    
+    
+  }
+  [data-skill="1"]{
+
+    
+    display: flex;
+flex-direction: row;
+    border-style: solid;
+    border-color: rgb(16, 97, 129);
+    background-color: rgb(16, 97, 129);
+    width: 100px;
+    
+  }
+  [data-skill="9"]::after{
+
+    content: '★★★★★';
+    
+    
+  }
+  [data-skill="9"]{
+
+    
+    display: flex;
+flex-direction: row;
+    border-style: solid;
+    border-color: rgb(16, 97, 129);
+    background-color: rgb(16, 97, 129);
+    width: 100px;
+    
+  }
+  [data-skill="7"]::after{
+
+    content: '★★★★';
+  }
+
+  [data-skill="7"] {
+display: flex;
+flex-direction: row;
+    border-style: solid;
+    border-color: rgb(16, 97, 129);
+    background-color: rgb(16, 97, 129);
+    width: 100px;
+  }
+
+.skills {
+    justify-content: space-between;
+    position: relative;
+    right: 430px;
+    top: 50px;
+}
+
+.skill {
+    justify-content: space-between;
+}
+
+  .skills-primary {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: white;
+      font-size: 15px;
+  }
+
+  .skills-secondary {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: white;
+      font-size: 10px;
+      
+  }
+
+  #competencies::after {
+    content: " ";
+    display: block;
+    border-left: 2px solid gray;
+    height: 100px;
+    position: relative; 
+    left:250px
+    
+}
+    section#competencies > h3 {
+        position: relative;
+        right: 600px;
+        top: 100px;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+        
+    }
+    #competencies {
+        position: relative;
+        bottom: 170px;
+        right: 100px;
+    }
+
+#experiences {
+    
+    text-align: left;
+    position: relative;
+    width: 700px;
+    bottom: 170px;
+}
+.experience {
+    position: relative;
+    left: 180px;
+}
+
+#experiences::after {
+    display: block;
+    content: " ";
+    border-left: 2px gray solid;
+    height: 370px;
+    position: relative;
+    left: 150px;
+    bottom: 380px;
+}
+
+section#experiences > h3 {
+    position: relative;
+    left: 10px;
+    top: 40px;
+    font-style: italic;
+}
+.experience-institution {
+    visibility: hidden;
+}
+.experience-type {
+  color: rgb(16, 97, 129);
+}
+.experience-date {
+    color: gray;
+}
+.experience-location {
+    color: gray;
+}
+.experience-details {
+    position: relative;
+    left: 600px;
+}
+.experience-date-separator {
+    color: rgb(16, 97, 129);
+}
+#education::after {
+    display: block;
+    content: " ";
+    border-left: 2px gray solid;
+    height: 370px;
+    position: relative;
+    left: 150px;
+    bottom: 380px;
+}
+#education {
+    position: relative;
+    bottom: 475px;
+}
+section#education > h3 {
+    font-style: italic;
+    position: relative;
+    left: 20px;
+    top: 35px;
+}
+section#education > .experience {
+position: relative;
+
+width: 700px;
+}
+#hobbies {
+    position: relative;
+    bottom: 750px;
+    
+}
+#hobbies::after {
+    display: block;
+    content: " ";
+    border-left: 2px gray solid;
+    height: 150px;
+    position: relative;
+    left: 150px;
+    bottom: 150px;
+}
+section#hobbies > ul {
+    position: relative;
+    left: 150px;
+    bottom: 30px;
+}
+
+#contact {
+    visibility: hidden;
+}
