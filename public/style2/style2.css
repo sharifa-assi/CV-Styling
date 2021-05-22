@@ -47,6 +47,7 @@ flex-direction: row;
     border-color: rgb(16, 97, 129);
     background-color: rgb(16, 97, 129);
     width: 100px;
+    margin-left: 4px;
     
   }
   [data-skill="3"]{
@@ -58,6 +59,7 @@ flex-direction: row;
     border-color: rgb(16, 97, 129);
     background-color: rgb(16, 97, 129);
     width: 100px;
+    margin-left: 8px;
     
   }
 
@@ -69,7 +71,7 @@ flex-direction: row;
   [data-skill="1"]::after{
 
     content: '★';
-    
+    margin-left: 5px;
     
   }
   [data-skill="1"]{
@@ -81,6 +83,7 @@ flex-direction: row;
     border-color: rgb(16, 97, 129);
     background-color: rgb(16, 97, 129);
     width: 100px;
+    margin-left: 10px;
     
   }
   [data-skill="9"]::after{
@@ -112,17 +115,22 @@ flex-direction: row;
     border-color: rgb(16, 97, 129);
     background-color: rgb(16, 97, 129);
     width: 100px;
+    margin-left: 10px;
   }
 
 .skills {
-    justify-content: space-between;
+    
     position: relative;
     right: 430px;
     top: 50px;
+
+
 }
 
 .skill {
-    justify-content: space-between;
+    position: relative;
+    top: 20px;
+
 }
 
   .skills-primary {
@@ -130,7 +138,10 @@ flex-direction: row;
       flex-direction: row;
       justify-content: space-between;
       color: white;
-      font-size: 15px;
+      font-size: 13px;
+      position: relative;
+      top: 20px;
+    
   }
 
   .skills-secondary {
@@ -139,7 +150,9 @@ flex-direction: row;
       justify-content: space-between;
       color: white;
       font-size: 10px;
-      
+position: relative;
+top: 35px;
+    
   }
 
   #competencies::after {
