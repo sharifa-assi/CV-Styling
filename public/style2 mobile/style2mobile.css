@@ -1,35 +1,49 @@
 h2 {
     visibility: hidden;
 }
-h1::after {
-content: " ";
-display: block;
-border: 1px solid lightgray;
-position: relative;
-top: 20px;
-}
 
 
+@media only screen and (max-width: 600px) {
 
-#about {
-    position: relative;
-    bottom: 270px;
-    color: gray;
-    float: left;
-    text-align: left;
-    width: 700px;
+h1 {
+    font-size: 30px;
 }
 
 figure {
-    position: relative;
-    left: 680px;
-    bottom: 105px;
+    visibility: hidden;
 }
-img {
-    height: 200px;
-    transform: skew(15deg,-10deg);
+
+h1::after {
+    content: " ";
+    display: block;
+    border: 1px solid lightgray;
+    position: relative;
+    top: 20px;
+    }
+
+    #about {
+        position: relative;
+        color: gray;
+        top: -200px;
+        font-size: 14px;
+        
+    }
+section#about > h3 {
+    visibility: hidden;
+}
+#competencies::after {
+    content: " ";
+    display: block;
+    border: 1px solid black;
+    position: relative; 
+    width: 150px;
+    top: -210px;
     
- 
+}
+
+section#competencies > h3 {
+    position: relative;
+    top: -150px;
 }
 
 
@@ -47,7 +61,7 @@ flex-direction: row;
     border-color: rgb(16, 97, 129);
     background-color: rgb(16, 97, 129);
     width: 100px;
-    margin-left: 4px;
+    margin-left: 13px;
     
   }
   [data-skill="3"]{
@@ -101,7 +115,7 @@ flex-direction: row;
     border-color: rgb(16, 97, 129);
     background-color: rgb(16, 97, 129);
     width: 100px;
-    
+    margin-left: 7px;
   }
   [data-skill="7"]::after{
 
@@ -115,200 +129,133 @@ flex-direction: row;
     border-color: rgb(16, 97, 129);
     background-color: rgb(16, 97, 129);
     width: 100px;
-    margin-left: 10px;
+    margin-left: 7px;
   }
 
-.skills {
-    
-    position: relative;
-    right: 430px;
-    top: 50px;
-
-
-}
-
-.skill {
-    position: relative;
-    top: 20px;
-
-}
 
   .skills-primary {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       color: white;
       font-size: 13px;
       position: relative;
-      top: 20px;
-    left: -435px;
+      top: -140px;
   }
 
   .skills-secondary {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       color: white;
       font-size: 10px;
 position: relative;
-top: 35px;
-    
+ top: -130px;
+ left: 5px;
   }
-
-  #competencies::after {
-    content: " ";
-    display: block;
-    border-left: 2px solid gray;
-    height: 100px;
-    position: relative; 
-    left:250px
-    
-}
-    section#competencies > h3 {
-        position: relative;
-        right: 600px;
-        top: 100px;
-        font-style: italic;
-        color: rgb(0, 0, 0);
-        
-    }
-    #competencies {
-        position: relative;
-        bottom: 170px;
-        right: 100px;
-    }
-
-#experiences {
-    
-    text-align: left;
-    position: relative;
-    width: 700px;
-    bottom: 170px;
-}
-.experience {
-    position: relative;
-    left: 180px;
-}
-
-#experiences::after {
-    display: block;
-    content: " ";
-    border-left: 2px gray solid;
-    height: 370px;
-    position: relative;
-    left: 150px;
-    bottom: 380px;
-}
 
 section#experiences > h3 {
     position: relative;
-    left: 10px;
-    top: 40px;
-    font-style: italic;
+    
 }
+
+#experiences::after {
+    content: " ";
+    display: block;
+    border: 1px solid black;
+    position: relative; 
+    width: 150px;
+    top: -430px;
+    
+}
+
+#experiences {
+    position: relative;
+    top: -100px;
+}
+
 .experience-institution {
     visibility: hidden;
 }
 .experience-type {
-  color: rgb(16, 97, 129);
-}
-.experience-date {
-    color: gray;
-}
-.experience-location {
-    color: gray;
-}
-.experience-details {
-    position: relative;
-    left: 600px;
+    color: rgb(16, 97, 129);
+  }
+  .experience-date {
+      color: gray;
+  }
+  .experience-location {
+    color: gray; }
+
+.experience-date-separator {
+    color: rgb(16, 97, 129);
 }
 .experience-date-separator {
     color: rgb(16, 97, 129);
 }
-#education::after {
-    display: block;
-    content: " ";
-    border-left: 2px gray solid;
-    height: 370px;
+.experience-details {
     position: relative;
-    left: 150px;
-    bottom: 380px;
+    left: 390px;
+    top: -40px;
 }
 #education {
     position: relative;
-    bottom: 475px;
+    top: -40px;
 }
-section#education > h3 {
-    font-style: italic;
-    position: relative;
-    left: 20px;
-    top: 35px;
-}
-section#education > .experience {
-position: relative;
+#education::after {
+    content: " ";
+    display: block;
+    border: 1px solid black;
+    position: relative; 
+    width: 150px;
+    top: -430px;
 
-width: 700px;
-}
-#hobbies {
-    position: relative;
-    bottom: 750px;
-    
 }
 #hobbies::after {
-    display: block;
     content: " ";
-    border-left: 2px gray solid;
-    height: 150px;
-    position: relative;
-    left: 150px;
-    bottom: 150px;
+    display: block;
+    border: 1px solid black;
+    position: relative; 
+    width: 150px;
+    top: -90px;
 }
-section#hobbies > ul {
-    position: relative;
-    left: 150px;
-    bottom: 30px;
+section#contact > h3 {
+    visibility: hidden;
 }
-
 
 .contact-facebook {
     background-image: url(../images/facebook.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    top: -900px;
-   width: 80px;
-   height: 80px;
+    background-size: 60px;
+    left: -520px;
+    top: 90px;
 }
 .contact-github {
     background-image: url(../images/github.png);
     background-size: contain;
     background-repeat: no-repeat;
-    top: -900px;
-    position: relative;
-left: -40px;
-    width: 80px;
-    height: 80px;
     
+    position: relative;
+    
+    left: -230px;
+    top: -2px;
 }
 .contact-phone {
     background-image: url(../images/phone.png);
     background-size: contain;
     background-repeat: no-repeat;
-    top: -900px;
+    background-size: 50px;
     position: relative;
-    width: 80px;
-    height: 80px;
-    left: -70px;
+    
+    left: -150px;
 }
 .contact-email {
     background-image: url(../images/email.png);
     background-size: contain;
     background-repeat: no-repeat;
-    top: -900px;
+    background-size: 70px;
     position: relative;
-    width: 80px;
-    height: 80px;
-   left: 0px;
+    top: -10px;
+    left: 20px;
 }
 dl.contact > dt.contact-type {
     visibility: hidden;
@@ -319,10 +266,6 @@ dl.contact > dd.contact-value {
 .contacts {
     display: flex;
     flex-direction: row;
-    position: relative;
-    left: 180px;
-}
-section#contact > h3 {
-    visibility: hidden;
 }
 
+}
