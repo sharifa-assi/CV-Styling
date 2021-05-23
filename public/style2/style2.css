@@ -9,7 +9,9 @@ position: relative;
 top: 20px;
 }
 
-
+section#about > h3 {
+    visibility: hidden;
+}
 
 #about {
     position: relative;

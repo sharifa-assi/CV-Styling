@@ -1,0 +1,193 @@
+@media only screen and (max-width:600px) {
+
+hgroup {
+    color: red;
+    position: relative;
+    left: 40px;
+}
+header{
+    background-color: gray;
+    position: relative;
+    top: -25px;
+}
+h3::before {
+    content: ".";
+    color: red;
+    font-size: 120px;
+    
+    }
+    h3::after {
+        display: block;
+        content: " ";
+        border: 0.4px solid rgb(114, 114, 114);
+        position: relative; 
+    }   
+section#about > p {
+    position: relative;
+    left: 15px;
+    font-size: 20px;
+}
+
+.experience-type { 
+    color: red;
+}
+
+.experience-institution {
+color: rgb(241, 54, 54);
+
+}
+ .experience-date {
+     color: grey;
+ }
+.experience-location {
+    color: grey;
+}
+.experience-institution::before{
+    content:"@";
+    color: red;
+}
+.experience-date-separator {
+    color: red;
+}
+.experience {
+    position: relative;
+    left: 15px;
+    font-size: 20px;
+}
+
+ul {
+    position: relative;
+    left: 20px;
+}
+.contact-type {
+     width: 300px;
+  border: 2px solid red;
+  background-color: red;
+  position: relative;
+  bottom: 30px;
+  width: 135px;
+  color: white;
+
+}
+
+.contact-email {
+    position: relative;
+    top: 35px;
+}
+
+.contact-value {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    
+}
+.contact-phone {
+    position: relative;
+    bottom: 35px;
+}
+
+.contact-github {
+    position: relative;
+    bottom: 70px;
+}
+.contact-facebook {
+    position: relative;
+    bottom: 105px;
+}
+
+
+
+a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  [data-skill="5"]{
+
+    width: 50%;
+    background-color: red;
+  
+   
+    border-bottom-color: lightgray;
+    border-top-color: lightgray;
+    border-left-color: lightgray;
+    border-right-color: lightgray;
+  
+}
+
+[data-skill="1"]{
+
+    width: 10%;
+    background-color: red;
+    
+}
+
+[data-skill="3"] {
+width: 30%;
+background-color: red;
+}
+
+[data-skill="9"]{
+width: 90px;
+background-color: red;
+}
+[data-skill="7"]{
+width: 70;
+background-color: red;
+}
+
+.skills {
+    text-align:start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    row-gap: 3px;
+    position: relative;
+    left: 40px;
+    
+}
+
+.skills-primary {
+    
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    
+ color: black;
+}
+
+.skills-primary::before {
+    content: "Main";
+    color: black;
+    font-weight: bold;
+    
+}
+
+.skills-secondary::before {
+    content: "Other";
+    color: black;
+    font-weight: bold;
+}
+
+
+.skills-secondary {
+
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+ 
+}

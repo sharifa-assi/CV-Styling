@@ -79,6 +79,12 @@ float: left;
     width: 50%;
     background-color: red;
   
+   
+    border-bottom-color: lightgray;
+    border-top-color: lightgray;
+    border-left-color: lightgray;
+    border-right-color: lightgray;
+  
 }
 
 [data-skill="1"]{
@@ -121,7 +127,6 @@ right: 320px;
 
 .contact-type {
 
-border: 1px;
 background-color: red;
 }
 .experience-date-separator {
@@ -143,9 +148,10 @@ background-color: red;
     columns: 50px;
     color: red;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     background-color: black;
-    text-decoration: none; border-bottom:1px solid red; 
+    
+    
     
 }
 
@@ -229,3 +235,43 @@ left: 40px;
     position: relative;
     
 }
+
+
+a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .contact-skype {
+      position: relative;
+      top: 18px;
+  }
+  .contact-github {
+    position: relative;
+    top: -18px;
+  }
+  .contact-facebook {
+    position: relative;
+    top: -35px;
+  }
+  .contact-email {
+      position: relative;
+      top: 35px;
+  }
+
+  dl.contact-skype > dd.contact-value {
+      color: black;
+  }
